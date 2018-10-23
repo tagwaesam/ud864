@@ -25,6 +25,7 @@ API Course, Lesson 1 -->
        // Create it with the position of the singleLatLng,
        // on the map, and give it your own title!
        var marker = new google.maps.Marker({
+        map:map,
         position: singleLatLng,
         title: "init marker",
         animation: google.maps.Animation.DROP
@@ -33,7 +34,7 @@ API Course, Lesson 1 -->
 
        // TODO: create a single infowindow, with your own content.
        // It must appear on the marker
-       var Infowindow = new google.maps.InfoWindow();
+       var infowindow = new google.maps.InfoWindow();
        infowindow.marker = marker;
        infowindow.setContent('<div>' + marker.position + '</div>');
 
