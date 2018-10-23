@@ -39,6 +39,9 @@ API Course, Lesson 1 -->
 
        // TODO: create an EVENT LISTENER so that the infowindow opens when
        // the marker is clicked!
+       marker.addListener('click', function() {
+         infowindow.open(map, marker);
+       });
      }
    </script>
    <!--TODO: Insert your API Key in the below call to load the API.-->
