@@ -33,6 +33,9 @@ API Course, Lesson 1 -->
 
        // TODO: create a single infowindow, with your own content.
        // It must appear on the marker
+       var Infowindow = new google.maps.InfoWindow();
+       infowindow.marker = marker;
+       infowindow.setContent('<div>' + marker.title + '</div>');
 
        // TODO: create an EVENT LISTENER so that the infowindow opens when
        // the marker is clicked!
